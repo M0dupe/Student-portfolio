@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | John Doe - Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">JD Portfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="images/profile.jpg" alt="Portrait of John Doe" class="profile-img">
+        <h1>Hello, I'm <span class="highlight">John Doe</span></h1>
+        <p class="welcome">Welcome to my academic portfolio 👋</p>
+        <p class="bio">
+          I am a 300-level Computer Science student at the University of Lagos,
+          passionate about web development, data structures, and creating
+          clean, user-friendly digital experiences. I build responsive,
+          accessible websites using HTML, CSS, and JavaScript.
+        </p>
+        <a href="about.html" class="btn">Learn More About Me</a>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features">
+      <h2>What You'll Find Here</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>👤 About Me</h3>
+          <p>My background, skills, career goals, and hobbies.</p>
+        </div>
+        <div class="card">
+          <h3>💼 Projects</h3>
+          <p>Real projects I've built as a student developer.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Academic Planner</h3>
+          <p>An interactive task manager to organize my studies.</p>
+        </div>
+        <div class="card">
+          <h3>✉️ Contact</h3>
+          <p>A validated form to reach me directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA DEMO (intro video) -->
+    <section class="multimedia">
+      <h2>Intro Video</h2>
+      <video controls width="100%" poster="images/profile.jpg">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Or listen to my audio introduction:</p>
+      <audio controls>
+        <source src="videos/intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 John Doe. Built for COS 106.</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/johndoe" target="_blank">GitHub</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // Simple nav toggle for mobile
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
